@@ -2,8 +2,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 public class AlekseySTest {
 
@@ -54,6 +58,79 @@ public class AlekseySTest {
         Thread.sleep(1000);
 
         String actualResult = h2CityNameHeader.getText();
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+        driver.quit();
+    }
+
+    @Test
+    public void testDashboardLinkFromMainPage_WhenClick() throws InterruptedException {
+        System.setProperty("webdriver.chrome.driver", "d:\\RedRover_school\\Soft\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+
+        String url = "https://openweathermap.org/";
+        String expectedResult = "Dashboard";
+
+        driver.get(url);
+
+        driver.manage().timeouts().pageLoadTimeout(1, TimeUnit.MINUTES);
+
+        Boolean dynamicElement = (new WebDriverWait(driver, 60))
+                .until(ExpectedConditions.invisibilityOfElementLocated(
+                        By.xpath("//div[@class ='owm-loader-container']/div[@class='owm-loader']")));
+
+        WebElement dashboardButton = driver.findElement(
+                By.xpath("//div[@id='desktop-menu']//li/a[text() = 'Dashboard']"));
+
+        dashboardButton.click();
+
+        WebElement NameHeader = driver.findElement(By.xpath("//div/h1/b")
+        );
+
+        String actualResult = NameHeader.getText();
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+        driver.quit();
+    }
+
+    @Test
+    public void testLinkFromMainPageToDashboardAndBackToMainPage_WhenClick() throws InterruptedException {
+        System.setProperty("webdriver.chrome.driver", "d:\\RedRover_school\\Soft\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+
+        String url = "https://openweathermap.org/";
+        String expectedResult = "Сurrent weather and forecast - OpenWeatherMap";
+
+        driver.get(url);
+
+        driver.manage().timeouts().pageLoadTimeout(1, TimeUnit.MINUTES);
+
+        Boolean dynamicElement = (new WebDriverWait(driver, 60))
+                .until(ExpectedConditions.invisibilityOfElementLocated(
+                        By.xpath("//div[@class ='owm-loader-container']/div[@class='owm-loader']")));
+
+        WebElement dashboardButton = driver.findElement(
+                By.xpath("//div[@id='desktop-menu']//li/a[text() = 'Dashboard']"));
+
+        dashboardButton.click();
+
+        WebElement NameHeader = driver.findElement(By.xpath("//div/h1/b")
+        );
+
+        String actualResult1 = NameHeader.getText();
+
+        WebElement HomeButton = driver.findElement(
+                By.xpath("//div/ol/li/a[@href = '/']"));
+
+        HomeButton.click();
+
+        dynamicElement = (new WebDriverWait(driver, 60))
+                .until(ExpectedConditions.invisibilityOfElementLocated(
+                        By.xpath("//div[@class ='owm-loader-container']/div[@class='owm-loader']")));
+
+        String actualResult = driver.getTitle();
 
         Assert.assertEquals(actualResult, expectedResult);
 
