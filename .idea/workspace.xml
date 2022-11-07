@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97826d28-5a53-4761-8379-6b07b3507f89" name="Changes" comment="" />
+    <list default="true" id="97826d28-5a53-4761-8379-6b07b3507f89" name="Changes" comment="07/10/22 2 tests added:&#10;testDashboardLinkFromMainPage_WhenClick&#10;testLinkFromMainPageToDashboardAndBackToMainPage_WhenClick">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AlekseySTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AlekseySTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AlekseySTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AlekseySTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -29,14 +39,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/SLOWMO/IdeaProjects/Weather"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/SLOWMO/IdeaProjects/Weather&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="TestNG.AlekseySTest.testDashboardLinkFromMainPage_WhenClick">
+    <configuration name="AlekseySTest.testDashboardLinkFromMainPage_WhenClick" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Weather" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AlekseySTest" />
+      <option name="METHOD_NAME" value="testDashboardLinkFromMainPage_WhenClick" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AlekseySTest.testH2TagText_WhenSearchingCityCountry" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Weather" />
       <option name="PACKAGE_NAME" value="" />
@@ -49,8 +71,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AlekseySTest.testLinkFromMainPageToDashboardAndBackToMainPage_WhenClick" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Weather" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AlekseySTest" />
+      <option name="METHOD_NAME" value="testLinkFromMainPageToDashboardAndBackToMainPage_WhenClick" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AlekseySTest.testDashboardLinkFromMainPage_WhenClick" />
+        <item itemvalue="TestNG.AlekseySTest.testLinkFromMainPageToDashboardAndBackToMainPage_WhenClick" />
         <item itemvalue="TestNG.AlekseySTest.testH2TagText_WhenSearchingCityCountry" />
       </list>
     </recent_temporary>
@@ -64,6 +100,14 @@
       <option name="presentableId" value="Default" />
       <updated>1667148268999</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1667750898196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667750898196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,5 +120,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <MESSAGE value="07/10/22 2 tests added:&#10;testDashboardLinkFromMainPage_WhenClick&#10;testLinkFromMainPageToDashboardAndBackToMainPage_WhenClick" />
+    <option name="LAST_COMMIT_MESSAGE" value="07/10/22 2 tests added:&#10;testDashboardLinkFromMainPage_WhenClick&#10;testLinkFromMainPageToDashboardAndBackToMainPage_WhenClick" />
   </component>
 </project>
